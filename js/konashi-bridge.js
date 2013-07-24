@@ -414,10 +414,6 @@
       k.trigger("uartWrite", {data: data});
     },
 
-    uartPutChar: function(char){
-      k.trigger("uartWrite", {data: char.charCodeAt(0)});
-    },
-
     uartWriteString: function(str){
       for(var i=0;i<str.length;i++){
         k.trigger("uartWrite", {data: str.charCodeAt(i)});
